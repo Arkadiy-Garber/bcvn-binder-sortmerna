@@ -6,3 +6,34 @@ Initially forked from [here](https://github.com/binder-examples/conda). Thank yo
 
 Part of the [Bioinformatics Virtual Coordination Network](https://biovcnet.github.io/) :)
 
+## Walkthrough
+
+Take a look around
+    
+    ls
+
+
+Check out the rRNA database files
+
+    cd rRNA_databases/sample/
+
+Look inside one of the database FASTA files
+
+    less silva-bac-16s-id90.fasta
+
+go back to the home directory
+
+    cd ../../
+
+Go into the reads directory
+
+    reads
+
+
+Print the sortmerna help menu
+
+    sortmerna -h
+    
+Run command on single-end reads:
+
+    sortmerna --reads MBIC-2-sw0.trimmed.sample.fastq --ref ../rRNA_databases/sample/silva-bac-16s-id90.fasta --ref ../rRNA_databases/sample/silva-bac-23s-id98.fasta --fastx --aligned MBIC-2-sw0.trimmed.sample.rRNA.fastq --other MBIC-2-sw0.trimmed.sample.mRNA.fastq
