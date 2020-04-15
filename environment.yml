@@ -5,5 +5,4 @@ channels:
   - defaults
 dependencies:
   - sortmerna
-  - trimmomatic
   - pip
