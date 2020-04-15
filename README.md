@@ -49,3 +49,7 @@ Run command on paired-end reads
 Run command on single-end reads, creating an OTU map
 
     sortmerna --reads MBIC-2-sw0.trimmed.sample.fastq --ref ../rRNA_databases/sample/silva-bac-16s-id90.fasta --ref ../rRNA_databases/sample/silva-bac-23s-id98.fasta --fastx --aligned MBIC-2-sw0.trimmed.sample.rRNA.fastq --other MBIC-2-sw0.trimmed.sample.mRNA.fastq --otu_map
+
+Examine OTU map output
+
+    less -S MBIC-2-sw0.trimmed.sample.rRNA.fastq_otus.txt
