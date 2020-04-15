@@ -46,3 +46,6 @@ Run command on paired-end reads
 
     sortmerna --reads SRR6039934_1P.fastq --reads SRR6039934_2P.fastq --ref ../rRNA_databases/sample/silva-bac-16s-id90.fasta --ref ../rRNA_databases/sample/silva-bac-23s-id98.fasta --fastx --other SRR6039934.mRNA --out2 --paired_out
 
+Run command on single-end reads, creating an OTU map
+
+    sortmerna --reads MBIC-2-sw0.trimmed.sample.fastq --ref ../rRNA_databases/sample/silva-bac-16s-id90.fasta --ref ../rRNA_databases/sample/silva-bac-23s-id98.fasta --fastx --aligned MBIC-2-sw0.trimmed.sample.rRNA.fastq --other MBIC-2-sw0.trimmed.sample.mRNA.fastq --otu_map
