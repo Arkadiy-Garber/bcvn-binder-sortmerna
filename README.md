@@ -29,7 +29,6 @@ Go into the reads directory
 
     reads
 
-
 Print the sortmerna help menu
 
     sortmerna -h
@@ -53,3 +52,18 @@ Run command on single-end reads, creating an OTU map
 Examine OTU map output
 
     less -S MBIC-2-sw0.trimmed.sample.rRNA.fastq_otus.txt
+
+Run Flash (bonus)
+    
+    flash SRR6039934_1P.fastq SRR6039934_2P.fastq
+
+Run SortMeRNA on Flashed reads
+
+    sortmerna --reads ./out.extendedFrags.fastq --ref ../rRNA_databases/sample/silva-bac-16s-id90.fasta --ref ../rRNA_databases/sample/silva-bac-23s-id98.fasta --fastx --aligned out.extendedFrags.rRNA.fastq --other out.extendedFrags.mRNA.fastq
+
+
+
+
+
+
+
