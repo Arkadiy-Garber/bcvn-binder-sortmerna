@@ -53,7 +53,8 @@ Examine OTU map output
 
     less -S MBIC-2-sw0.trimmed.sample.rRNA.fastq_otus.txt
 
-Run Flash (bonus)
+## Bonus section (if I don't run out of time)
+Run Flash
     
     flash SRR6039934_1P.fastq SRR6039934_2P.fastq
 
